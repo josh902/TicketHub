@@ -48,6 +48,7 @@
         PurchaseDate: new Date(form.PurchaseDate.value).toISOString() // ✅ fixed date format
       };
 
+      
       try {
         const response = await fetch("https://ticket-hub-api-w0468743.azurewebsites.net/api/purchase", {
           method: "POST",
